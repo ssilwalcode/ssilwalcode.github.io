@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Silviya | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio for Silviya, focused on AI governance, responsible technology, and thoughtful software projects."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">S</span>
+        <span>Silviya</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">AI ethics • research tools • human-centered systems</p>
+          <h1>Building thoughtful technology with evidence, care, and curiosity.</h1>
+          <p class="lede">
+            I create practical software projects that make complex ideas easier to explore,
+            especially around responsible AI, governance, and source-grounded research.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button primary" href="#work">View projects</a>
+            <a class="button secondary" href="mailto:hello@example.com">Email me</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Portfolio snapshot">
+          <img
+            class="hero-image"
+            src="assets/portfolio-hero.png"
+            alt="Desk with research notes, a laptop dashboard, and visual AI governance materials"
+          >
+          <div class="metric-row">
+            <div class="metric">
+              <strong>03</strong>
+              <span>Featured projects</span>
+            </div>
+            <div class="metric">
+              <strong>AI</strong>
+              <span>Governance focus</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects with a point of view</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div>
+              <p class="project-kicker">Research assistant</p>
+              <h3>EthicsRAG</h3>
+              <p>
+                A source-grounded AI ethics workspace for asking governance questions,
+                comparing policies, and tracing answers back to evidence.
+              </p>
+            </div>
+            <ul class="tag-list" aria-label="EthicsRAG skills">
+              <li>Python</li>
+              <li>RAG</li>
+              <li>AI governance</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <p class="project-kicker">Safety lab</p>
+              <h3>PromptShield Lab</h3>
+              <p>
+                A hands-on environment for testing prompt safety scenarios and learning how
+                guardrails behave under different model conditions.
+              </p>
+            </div>
+            <ul class="tag-list" aria-label="PromptShield Lab skills">
+              <li>JavaScript</li>
+              <li>Evaluation</li>
+              <li>UX</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <p class="project-kicker">Portfolio system</p>
+              <h3>Personal Website</h3>
+              <p>
+                A clean, responsive home for projects, writing, and learning notes,
+                designed to grow as the work becomes more public.
+              </p>
+            </div>
+            <ul class="tag-list" aria-label="Personal Website skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Design</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>A portfolio for careful builders</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I am interested in the space where software engineering, AI governance,
+            and clear explanation meet. My work often starts with a hard question:
+            how can people trust, inspect, and improve the systems they use?
+          </p>
+          <p>
+            This site is a starting point. Replace this copy with your real bio,
+            add your strongest projects, and connect the links that matter most.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>What I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article>
+            <h3>Engineering</h3>
+            <p>Python, JavaScript, APIs, testing, data pipelines, and lightweight web apps.</p>
+          </article>
+          <article>
+            <h3>AI Systems</h3>
+            <p>Retrieval, evaluation, prompt design, source quality, and responsible AI workflows.</p>
+          </article>
+          <article>
+            <h3>Communication</h3>
+            <p>Research synthesis, documentation, product thinking, and readable technical writing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something useful.</h2>
+          <p>
+            Add your preferred email, LinkedIn, GitHub, or resume link here.
+            Keep the options focused so visitors know the best next step.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Silviya. Built with HTML, CSS, and a little patience.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
