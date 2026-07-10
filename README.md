@@ -6,7 +6,7 @@ A static GitHub Pages portfolio for Data Engineering, AI/NLP, and trustworthy AI
 
 - Edit `index.html` to change your name, bio, project descriptions, and links.
 - Edit `styles.css` to adjust colors, spacing, and typography.
-- Replace the placeholder LinkedIn URL with your exact profile URL.
+- Update links and project descriptions as your public work evolves.
 
 ## Open Locally
 
