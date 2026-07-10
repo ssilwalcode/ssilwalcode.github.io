@@ -3,24 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Silviya | Portfolio</title>
+    <title>Silviya Silwal | Data & AI Engineer</title>
     <meta
       name="description"
-      content="Personal portfolio for Silviya, focused on AI governance, responsible technology, and thoughtful software projects."
+      content="Portfolio of Silviya Silwal, a Data Engineer and AI/NLP builder focused on trustworthy AI systems, evaluation, and multilingual language technology."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Go to top">
-        <span class="brand-mark">S</span>
-        <span>Silviya</span>
+        <span class="brand-mark">SS</span>
+        <span>Silviya Silwal</span>
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -32,15 +34,18 @@
     <main id="top">
       <section class="hero section-band">
         <div class="hero-copy">
-          <p class="eyebrow">AI ethics • research tools • human-centered systems</p>
-          <h1>Building thoughtful technology with evidence, care, and curiosity.</h1>
+          <p class="eyebrow">Data engineer • AI/NLP builder • Trustworthy systems</p>
+          <h1>Designing data and AI systems people can inspect, trust, and use.</h1>
           <p class="lede">
-            I create practical software projects that make complex ideas easier to explore,
-            especially around responsible AI, governance, and source-grounded research.
+            I build practical tools around AI evaluation, NLP, data workflows, and responsible
+            technology. My work connects engineering craft with research thinking: evidence,
+            traceability, multilingual language systems, and interfaces that make complex behavior clear.
           </p>
+
           <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button primary" href="#work">View projects</a>
-            <a class="button secondary" href="mailto:hello@example.com">Email me</a>
+            <a class="button primary magnetic" href="#work">Explore work</a>
+            <a class="button secondary magnetic" href="https://github.com/ssilwalcode" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button ghost magnetic" href="https://www.linkedin.com/in/ssilwal16/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
 
@@ -50,112 +55,189 @@
             src="assets/portfolio-hero.png"
             alt="Desk with research notes, a laptop dashboard, and visual AI governance materials"
           >
-          <div class="metric-row">
-            <div class="metric">
-              <strong>03</strong>
-              <span>Featured projects</span>
+          <div class="signal-grid">
+            <div>
+              <strong>NYC</strong>
+              <span>Data Engineer</span>
             </div>
-            <div class="metric">
-              <strong>AI</strong>
-              <span>Governance focus</span>
+            <div>
+              <strong>AI/NLP</strong>
+              <span>Master's focus</span>
+            </div>
+            <div>
+              <strong>ACL</strong>
+              <span>Publication</span>
             </div>
           </div>
         </aside>
       </section>
 
-      <section id="work" class="section">
+      <section id="work" class="section work-section">
         <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects with a point of view</h2>
+          <p class="eyebrow">Selected GitHub work</p>
+          <h2>Projects that show judgment, not just code.</h2>
+          <p>
+            I feature a small set of relevant repositories and leave out forks, word lists, and exercise collections.
+          </p>
+        </div>
+
+        <div class="project-toolbar" aria-label="Project filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="ai">AI safety</button>
+          <button class="filter-button" type="button" data-filter="nlp">NLP</button>
+          <button class="filter-button" type="button" data-filter="product">Product</button>
         </div>
 
         <div class="project-grid">
-          <article class="project-card featured">
-            <div>
-              <p class="project-kicker">Research assistant</p>
-              <h3>EthicsRAG</h3>
-              <p>
-                A source-grounded AI ethics workspace for asking governance questions,
-                comparing policies, and tracing answers back to evidence.
-              </p>
+          <article class="project-card featured" data-category="ai product">
+            <div class="project-topline">
+              <p class="project-kicker">AI safety evaluation</p>
+              <a href="https://github.com/ssilwalcode/PromptShield-Lab" target="_blank" rel="noreferrer">GitHub</a>
             </div>
-            <ul class="tag-list" aria-label="EthicsRAG skills">
-              <li>Python</li>
-              <li>RAG</li>
-              <li>AI governance</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div>
-              <p class="project-kicker">Safety lab</p>
-              <h3>PromptShield Lab</h3>
-              <p>
-                A hands-on environment for testing prompt safety scenarios and learning how
-                guardrails behave under different model conditions.
-              </p>
+            <h3>PromptShield Lab</h3>
+            <p>
+              Evaluation workspace for prompt injection, data leakage, unsafe tool use, and grounding failures
+              across simulator, local, and API-based LLM providers.
+            </p>
+            <button class="details-toggle" type="button" aria-expanded="false">View impact</button>
+            <div class="project-details" hidden>
+              <ul>
+                <li>Compares vulnerable and hardened assistant designs.</li>
+                <li>Runs repeatable attack suites with evaluator evidence.</li>
+                <li>Exports governance-style reports for model risk review.</li>
+              </ul>
             </div>
             <ul class="tag-list" aria-label="PromptShield Lab skills">
               <li>JavaScript</li>
-              <li>Evaluation</li>
-              <li>UX</li>
+              <li>LLM evaluation</li>
+              <li>AI safety</li>
             </ul>
           </article>
 
-          <article class="project-card">
-            <div>
-              <p class="project-kicker">Portfolio system</p>
-              <h3>Personal Website</h3>
-              <p>
-                A clean, responsive home for projects, writing, and learning notes,
-                designed to grow as the work becomes more public.
-              </p>
+          <article class="project-card" data-category="nlp ai">
+            <div class="project-topline">
+              <p class="project-kicker">Sequence labeling</p>
+              <a href="https://github.com/ssilwalcode/TermTagger_IOB" target="_blank" rel="noreferrer">GitHub</a>
             </div>
-            <ul class="tag-list" aria-label="Personal Website skills">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Design</li>
+            <h3>TermTagger IOB</h3>
+            <p>
+              Python NLP project centered on IOB tagging, a practical foundation for term extraction,
+              entity recognition, and structured language annotation workflows.
+            </p>
+            <button class="details-toggle" type="button" aria-expanded="false">View impact</button>
+            <div class="project-details" hidden>
+              <ul>
+                <li>Shows applied NLP modeling and linguistic data representation.</li>
+                <li>Connects naturally to multilingual NER and question generation work.</li>
+                <li>Good evidence of hands-on language technology fundamentals.</li>
+              </ul>
+            </div>
+            <ul class="tag-list" aria-label="TermTagger skills">
+              <li>Python</li>
+              <li>NLP</li>
+              <li>IOB tagging</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="product">
+            <div class="project-topline">
+              <p class="project-kicker">Application build</p>
+              <a href="https://github.com/ssilwalcode/SoftwareProject_app" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <h3>SoftwareProject App</h3>
+            <p>
+              A Python/front-end application project that rounds out the portfolio with product-building practice
+              beyond research prototypes.
+            </p>
+            <button class="details-toggle" type="button" aria-expanded="false">View impact</button>
+            <div class="project-details" hidden>
+              <ul>
+                <li>Demonstrates full application structure and UI thinking.</li>
+                <li>Useful signal for building deployable tools, not only notebooks.</li>
+                <li>Complements the AI-focused projects with broader software craft.</li>
+              </ul>
+            </div>
+            <ul class="tag-list" aria-label="SoftwareProject App skills">
+              <li>Python</li>
+              <li>Frontend</li>
+              <li>App design</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="about" class="section split-section">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>A portfolio for careful builders</h2>
+      <section id="experience" class="section split-section">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Engineering with research taste.</h2>
         </div>
-        <div class="about-copy">
-          <p>
-            I am interested in the space where software engineering, AI governance,
-            and clear explanation meet. My work often starts with a hard question:
-            how can people trust, inspect, and improve the systems they use?
-          </p>
-          <p>
-            This site is a starting point. Replace this copy with your real bio,
-            add your strongest projects, and connect the links that matter most.
-          </p>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-meta">Current</p>
+            <h3>Data Engineer</h3>
+            <p>
+              Building data systems in NYC with a focus on useful pipelines, clear data products,
+              and reliable engineering habits.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-meta">Previous</p>
+            <h3>AI Engineer, Uptime Labs</h3>
+            <p>
+              Worked on AI engineering problems where model behavior, product constraints, and practical
+              deployment decisions meet.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-meta">Research</p>
+            <h3>NLP Research Engineer, Synapse Developpement</h3>
+            <p>
+              Conducted NLP research in collaboration with academic researchers, including work connected
+              to multilingual question generation and language transfer.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section id="skills" class="section">
+      <section id="research" class="section research-section">
         <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
-          <h2>What I work with</h2>
+          <p class="eyebrow">Research & education</p>
+          <h2>Multilingual NLP, evaluation, and trustworthy AI.</h2>
         </div>
 
-        <div class="skills-grid">
-          <article>
-            <h3>Engineering</h3>
-            <p>Python, JavaScript, APIs, testing, data pipelines, and lightweight web apps.</p>
+        <div class="research-grid">
+          <article class="research-card">
+            <span>01</span>
+            <h3>Erasmus Mundus Master's in AI & NLP</h3>
+            <p>
+              Double-degree graduate training through the University of Lorraine and University of Malta,
+              with thesis work on cross-lingual transfer learning with adapters for multilingual question generation.
+            </p>
           </article>
-          <article>
-            <h3>AI Systems</h3>
-            <p>Retrieval, evaluation, prompt design, source quality, and responsible AI workflows.</p>
+
+          <article class="research-card">
+            <span>02</span>
+            <h3>SemEval / ACL publication</h3>
+            <p>
+              Co-authored research on simplified knowledge augmentation for multilingual complex named entity recognition,
+              published in the SemEval-2023 workshop proceedings.
+            </p>
+            <a href="https://aclanthology.org/2023.semeval-1.119/" target="_blank" rel="noreferrer">Read paper</a>
           </article>
-          <article>
-            <h3>Communication</h3>
-            <p>Research synthesis, documentation, product thinking, and readable technical writing.</p>
+
+          <article class="research-card">
+            <span>03</span>
+            <h3>Interests</h3>
+            <p>
+              Multilingual and multimodal LLMs, decision making, social reasoning, safety evaluation,
+              and interfaces that help people understand model behavior.
+            </p>
           </article>
         </div>
       </section>
@@ -163,22 +245,22 @@
       <section id="contact" class="section contact-section">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Let’s build something useful.</h2>
+          <h2>Open to thoughtful AI, data, and NLP work.</h2>
           <p>
-            Add your preferred email, LinkedIn, GitHub, or resume link here.
-            Keep the options focused so visitors know the best next step.
+            The best conversations start with a concrete problem: a model that needs evaluation,
+            a data workflow that needs structure, or an idea that needs a careful builder.
           </p>
         </div>
         <div class="contact-links">
-          <a href="mailto:hello@example.com">hello@example.com</a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="magnetic" href="https://github.com/ssilwalcode" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="magnetic" href="https://www.linkedin.com/in/ssilwal16/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="magnetic" href="https://ssilwalcode.github.io/">Portfolio URL</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Silviya. Built with HTML, CSS, and a little patience.</p>
+      <p>© <span id="year"></span> Silviya Silwal. Built for clarity, curiosity, and a little motion.</p>
     </footer>
 
     <script src="app.js"></script>
