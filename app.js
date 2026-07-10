@@ -1,9 +1,6 @@
 const root = document.body;
 const themeToggle = document.querySelector(".theme-toggle");
 const year = document.querySelector("#year");
-const cursorGlow = document.querySelector(".cursor-glow");
-const filterButtons = document.querySelectorAll(".filter-button");
-const projectCards = document.querySelectorAll(".project-card");
 const detailButtons = document.querySelectorAll(".details-toggle");
 const magneticItems = document.querySelectorAll(".magnetic");
 
@@ -34,41 +31,22 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
-
-    filterButtons.forEach((item) => item.classList.toggle("is-active", item === button));
-    projectCards.forEach((card) => {
-      const categories = card.dataset.category.split(" ");
-      const shouldShow = filter === "all" || categories.includes(filter);
-      card.classList.toggle("is-hidden", !shouldShow);
-    });
-  });
-});
-
 detailButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const details = button.nextElementSibling;
     const isExpanded = button.getAttribute("aria-expanded") === "true";
 
     button.setAttribute("aria-expanded", String(!isExpanded));
-    button.textContent = isExpanded ? "View impact" : "Hide impact";
+    button.textContent = isExpanded ? "What I designed" : "Hide details";
     details.hidden = isExpanded;
   });
-});
-
-window.addEventListener("pointermove", (event) => {
-  root.classList.add("has-pointer");
-  cursorGlow.style.left = `${event.clientX}px`;
-  cursorGlow.style.top = `${event.clientY}px`;
 });
 
 magneticItems.forEach((item) => {
   item.addEventListener("pointermove", (event) => {
     const rect = item.getBoundingClientRect();
-    const x = (event.clientX - rect.left - rect.width / 2) * 0.12;
-    const y = (event.clientY - rect.top - rect.height / 2) * 0.18;
+    const x = (event.clientX - rect.left - rect.width / 2) * 0.1;
+    const y = (event.clientY - rect.top - rect.height / 2) * 0.14;
     item.style.transform = `translate(${x}px, ${y}px)`;
   });
 

@@ -6,13 +6,11 @@
     <title>Silviya Silwal | Data & AI Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Silviya Silwal, a Data Engineer and AI/NLP builder focused on trustworthy AI systems, evaluation, and multilingual language technology."
+      content="Portfolio of Silviya Silwal, an Associate Data Engineer and AI/NLP builder focused on trustworthy AI systems, governance, data workflows, and multilingual language technology."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="cursor-glow" aria-hidden="true"></div>
-
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Go to top">
         <span class="brand-mark">SS</span>
@@ -21,9 +19,9 @@
 
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#work">Work</a>
+        <a href="#systems">Systems</a>
         <a href="#experience">Experience</a>
         <a href="#research">Research</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -35,135 +33,167 @@
     <main id="top">
       <section class="hero section-band">
         <div class="hero-copy">
-          <p class="eyebrow">Data engineer | AI/NLP builder | Trustworthy systems</p>
-          <h1>Designing data and AI systems people can inspect, trust, and use.</h1>
+          <p class="eyebrow">Data engineering | AI governance | Multilingual NLP</p>
+          <h1>I build AI and data systems that make evidence easier to use.</h1>
           <p class="lede">
-            I am an Associate Data Engineer at UNJSPF - Office of Investment Management,
-            building AI assistants, data workflows, dashboards, and governance practices.
-            My work connects engineering craft with research thinking: evidence, traceability,
-            multilingual NLP, and interfaces that make complex systems usable.
+            I am an Associate Data Engineer at UNJSPF - Office of Investment Management.
+            I work across AI assistants, data integration, dashboards, governance, and NLP research,
+            with a bias toward tools people can inspect, evaluate, and trust.
           </p>
 
           <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button primary magnetic" href="#work">Explore work</a>
+            <a class="button primary magnetic" href="#work">See selected work</a>
             <a class="button secondary magnetic" href="https://github.com/ssilwalcode" target="_blank" rel="noreferrer">GitHub</a>
             <a class="button ghost magnetic" href="https://www.linkedin.com/in/ssilwal16/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Portfolio snapshot">
-          <img
-            class="hero-image"
-            src="assets/portfolio-hero.png"
-            alt="Desk with research notes, a laptop dashboard, and visual AI governance materials"
-          >
-          <div class="signal-grid">
+        <aside class="hero-console" aria-label="Portfolio summary">
+          <div class="console-topbar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="console-line">
+            <small>Current focus</small>
+            <strong>AI-ready data systems</strong>
+          </div>
+          <div class="console-grid">
             <div>
               <strong>UNJSPF</strong>
               <span>Associate Data Engineer</span>
             </div>
             <div>
               <strong>85%+</strong>
-              <span>Production chatbot accuracy</span>
+              <span>Chatbot pipeline accuracy</span>
             </div>
             <div>
               <strong>13.2K</strong>
               <span>App engagements led</span>
             </div>
           </div>
+          <img
+            class="hero-image"
+            src="assets/portfolio-hero.png"
+            alt="Desk with research notes, a laptop dashboard, and visual AI governance materials"
+          >
         </aside>
       </section>
 
       <section id="work" class="section work-section">
         <div class="section-heading">
-          <p class="eyebrow">Selected GitHub work</p>
-          <h2>Projects that show judgment, not just code.</h2>
+          <p class="eyebrow">Selected work</p>
+          <h2>I am choosing quality over a long repo list.</h2>
           <p>
-            I feature a small set of relevant repositories and leave out forks, word lists, and exercise collections.
+            I am highlighting work that supports my strongest story: trustworthy AI, RAG,
+            language technology, data systems, and evaluation. I am leaving out forks,
+            exercises, and older general app work that does not sharpen that narrative.
           </p>
         </div>
 
-        <div class="project-toolbar" aria-label="Project filters">
-          <button class="filter-button is-active" type="button" data-filter="all">All</button>
-          <button class="filter-button" type="button" data-filter="ai">AI safety</button>
-          <button class="filter-button" type="button" data-filter="nlp">NLP</button>
-          <button class="filter-button" type="button" data-filter="product">Product</button>
-        </div>
+        <div class="work-grid">
+          <article class="case-card case-card-large" data-category="rag ai governance">
+            <div class="case-index">01</div>
+            <p class="project-kicker">RAG + AI governance</p>
+            <h3>EthicsRAG</h3>
+            <p>
+              I built EthicsRAG as a local research workspace for source-grounded AI governance
+              analysis. It turns policy documents, research notes, and approved sources into
+              traceable answers with evidence audits.
+            </p>
+            <button class="details-toggle" type="button" aria-expanded="false">What I designed</button>
+            <div class="project-details" hidden>
+              <ul>
+                <li>Document intake with provenance, approved source registry, snapshots, and content hashes.</li>
+                <li>TF-IDF retrieval with optional local embeddings and reciprocal-rank fusion.</li>
+                <li>Evidence audit for citation coverage, source diversity, and instruction-like source risk.</li>
+              </ul>
+            </div>
+            <ul class="tag-list" aria-label="EthicsRAG skills">
+              <li>Python</li>
+              <li>RAG</li>
+              <li>Governance</li>
+              <li>Evaluation</li>
+            </ul>
+          </article>
 
-        <div class="project-grid">
-          <article class="project-card featured" data-category="ai product">
+          <article class="case-card case-card-large" data-category="ai safety product">
+            <div class="case-index">02</div>
             <div class="project-topline">
-              <p class="project-kicker">AI safety evaluation</p>
+              <p class="project-kicker">LLM safety lab</p>
               <a href="https://github.com/ssilwalcode/PromptShield-Lab" target="_blank" rel="noreferrer">GitHub</a>
             </div>
             <h3>PromptShield Lab</h3>
             <p>
-              Evaluation workspace for prompt injection, data leakage, unsafe tool use, and grounding failures
-              across simulator, local, and API-based LLM providers.
+              I built PromptShield Lab to test prompt injection, data leakage, unsafe tool use,
+              and grounding failures across simulator, local, and API-based LLM providers.
             </p>
-            <button class="details-toggle" type="button" aria-expanded="false">View impact</button>
+            <button class="details-toggle" type="button" aria-expanded="false">What I designed</button>
             <div class="project-details" hidden>
               <ul>
-                <li>Compares vulnerable and hardened assistant designs.</li>
-                <li>Runs repeatable attack suites with evaluator evidence.</li>
-                <li>Exports governance-style reports for model risk review.</li>
+                <li>Vulnerable vs hardened assistant comparison.</li>
+                <li>Repeatable attack suites and benchmark dashboard.</li>
+                <li>Explainable evaluator evidence and governance-style Markdown reports.</li>
               </ul>
             </div>
             <ul class="tag-list" aria-label="PromptShield Lab skills">
               <li>JavaScript</li>
               <li>LLM evaluation</li>
               <li>AI safety</li>
+              <li>UX</li>
             </ul>
           </article>
 
-          <article class="project-card" data-category="nlp ai">
+          <article class="case-card compact" data-category="nlp research">
             <div class="project-topline">
-              <p class="project-kicker">Sequence labeling</p>
+              <p class="project-kicker">NLP foundations</p>
               <a href="https://github.com/ssilwalcode/TermTagger_IOB" target="_blank" rel="noreferrer">GitHub</a>
             </div>
             <h3>TermTagger IOB</h3>
             <p>
-              Python NLP project centered on IOB tagging, a practical foundation for term extraction,
-              entity recognition, and structured language annotation workflows.
+              IOB tagging work that connects directly to sequence labeling, term extraction,
+              entity recognition, and multilingual NLP fundamentals.
             </p>
-            <button class="details-toggle" type="button" aria-expanded="false">View impact</button>
-            <div class="project-details" hidden>
-              <ul>
-                <li>Shows applied NLP modeling and linguistic data representation.</li>
-                <li>Connects naturally to multilingual NER and question generation work.</li>
-                <li>Good evidence of hands-on language technology fundamentals.</li>
-              </ul>
-            </div>
             <ul class="tag-list" aria-label="TermTagger skills">
               <li>Python</li>
               <li>NLP</li>
-              <li>IOB tagging</li>
+              <li>Annotation</li>
             </ul>
           </article>
 
-          <article class="project-card" data-category="product">
-            <div class="project-topline">
-              <p class="project-kicker">Application build</p>
-              <a href="https://github.com/ssilwalcode/SoftwareProject_app" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-            <h3>SoftwareProject App</h3>
+          <article class="case-card compact accent" data-category="nlp publication">
+            <p class="project-kicker">Publication</p>
+            <h3>garNER at SemEval-2023</h3>
             <p>
-              A Python/front-end application project that rounds out the portfolio with product-building practice
-              beyond research prototypes.
+              I co-authored work on simplified knowledge augmentation for multilingual complex
+              named entity recognition, published in the SemEval-2023 workshop proceedings.
             </p>
-            <button class="details-toggle" type="button" aria-expanded="false">View impact</button>
-            <div class="project-details" hidden>
-              <ul>
-                <li>Demonstrates full application structure and UI thinking.</li>
-                <li>Useful signal for building deployable tools, not only notebooks.</li>
-                <li>Complements the AI-focused projects with broader software craft.</li>
-              </ul>
-            </div>
-            <ul class="tag-list" aria-label="SoftwareProject App skills">
-              <li>Python</li>
-              <li>Frontend</li>
-              <li>App design</li>
-            </ul>
+            <a class="inline-link" href="https://aclanthology.org/2023.semeval-1.114/" target="_blank" rel="noreferrer">Read the paper</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="systems" class="section systems-section">
+        <div class="section-heading">
+          <p class="eyebrow">How I think</p>
+          <h2>I like systems that show their work.</h2>
+        </div>
+
+        <div class="principle-grid">
+          <article>
+            <span>Trace</span>
+            <h3>Every answer should point back to evidence.</h3>
+            <p>I care about provenance, citations, source diversity, and making uncertainty visible.</p>
+          </article>
+          <article>
+            <span>Test</span>
+            <h3>AI systems need pressure tests before polish.</h3>
+            <p>I build repeatable evaluation workflows for prompt safety, grounding, and model behavior.</p>
+          </article>
+          <article>
+            <span>Ship</span>
+            <h3>Research only matters when people can use it.</h3>
+            <p>I turn experiments into dashboards, chatbots, data pipelines, and usable interfaces.</p>
           </article>
         </div>
       </section>
@@ -171,61 +201,45 @@
       <section id="experience" class="section split-section">
         <div class="section-heading sticky-heading">
           <p class="eyebrow">Experience</p>
-          <h2>Engineering with research taste.</h2>
+          <h2>I move between data engineering, AI, and NLP research.</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item">
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <p class="timeline-meta">May 2024 - Present · New York</p>
+            <p class="timeline-meta">May 2024 - Present | New York</p>
             <h3>Associate Data Engineer, UNJSPF - Office of Investment Management</h3>
             <p>
-              Designed AI-powered chatbots, built SQL Server, SSIS, Azure, and Power BI workflows
-              for ESG, vendor, and portfolio data, and led AI governance work including usage
-              guidelines, confidential data labeling, Copilot readiness, and GitHub Enterprise adoption.
+              I design AI-powered chatbots, build SQL Server, SSIS, Azure, and Power BI workflows
+              for ESG, vendor, and portfolio data, and lead governance work around AI usage,
+              confidential data labeling, Copilot readiness, and GitHub Enterprise adoption.
             </p>
           </article>
 
           <article class="timeline-item">
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <p class="timeline-meta">Oct. 2023 - Mar. 2024 · London / Remote</p>
+            <p class="timeline-meta">Oct. 2023 - Mar. 2024 | London / Remote</p>
             <h3>AI Engineer, Uptime Labs</h3>
             <p>
-              Integrated multi-agent and character systems, fine-tuned LLM workflows, contributed
-              to model architecture improvements, and supported experiments in continual learning,
-              RAG, grant writing, and user studies.
+              I integrated multi-agent and character systems, fine-tuned LLM workflows, improved
+              model architecture processes, and supported continual learning, RAG, grant writing,
+              and user studies.
             </p>
           </article>
 
           <article class="timeline-item">
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <p class="timeline-meta">Mar. 2023 - Sept. 2023 · Toulouse</p>
+            <p class="timeline-meta">Mar. 2023 - Sept. 2023 | Toulouse</p>
             <h3>NLP Research Engineer, Synapse Developpement</h3>
             <p>
-              Built a multilingual question generation system for DearBot in the ANR-funded
-              QUANTUM project, optimized chatbot pipelines with LlamaIndex, LangChain, and GPT models,
-              and modified mT5 with adapters for thesis research.
+              I built a multilingual question generation system for DearBot in the ANR-funded
+              QUANTUM project, using LlamaIndex, LangChain, GPT models, and mT5 adapters.
             </p>
           </article>
 
           <article class="timeline-item">
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <p class="timeline-meta">Feb. 2022 - June 2022 · Malta</p>
+            <p class="timeline-meta">Feb. 2022 - June 2022 | Malta</p>
             <h3>Graduate Research Engineer, MUFINS Lab</h3>
             <p>
-              Ran experiments with pretrained language models for zero-shot cross-lingual learning
-              in low-resource languages, including NER, POS, tokenizer augmentation, and masked
-              language model pretraining.
-            </p>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <p class="timeline-meta">Oct. 2017 - June 2020 · Washington, DC</p>
-            <h3>Tech Analyst, IFC - The World Bank Group</h3>
-            <p>
-              Automated manual workflows with Python and led IT logistics for the WBG Youth Summit
-              app, which supported 607 participants and 13.2K engagements.
+              I ran experiments with pretrained language models for zero-shot cross-lingual learning
+              in low-resource languages, including NER, POS, tokenizer augmentation, and MLM pretraining.
             </p>
           </article>
         </div>
@@ -234,7 +248,7 @@
       <section id="research" class="section research-section">
         <div class="section-heading">
           <p class="eyebrow">Research & education</p>
-          <h2>Multilingual NLP, evaluation, and trustworthy AI.</h2>
+          <h2>My research base is multilingual NLP and language technology.</h2>
         </div>
 
         <div class="research-grid">
@@ -242,8 +256,9 @@
             <span>01</span>
             <h3>Erasmus Mundus Master's in AI & NLP</h3>
             <p>
-              M.Sc. Natural Language Processing from Universite de Lorraine and M.Sc. Human Language
-              Science and Technology from the University of Malta. Thesis score: 17.5/20.
+              I completed graduate study through Universite de Lorraine and the University of Malta.
+              My thesis focused on cross-lingual transfer learning with adapters for multilingual
+              question generation and earned 17.5/20.
             </p>
           </article>
 
@@ -251,18 +266,18 @@
             <span>02</span>
             <h3>SemEval / ACL publication</h3>
             <p>
-              Co-authored research on simplified knowledge augmentation for multilingual complex named entity recognition,
-              published in the SemEval-2023 workshop proceedings.
+              I co-authored research on simplified knowledge augmentation for multilingual complex
+              named entity recognition.
             </p>
             <a href="https://aclanthology.org/2023.semeval-1.114/" target="_blank" rel="noreferrer">Read paper</a>
           </article>
 
           <article class="research-card">
             <span>03</span>
-            <h3>B.Sc. in Information Technology</h3>
+            <h3>Data science foundation</h3>
             <p>
-              Marymount University graduate with dual specialization in Computer Science and Data Science,
-              plus a minor in Applied Statistics.
+              I earned a B.Sc. in Information Technology from Marymount University with dual
+              specialization in Computer Science and Data Science, plus a minor in Applied Statistics.
             </p>
           </article>
         </div>
@@ -271,11 +286,7 @@
       <section id="skills" class="section skills-section">
         <div class="section-heading">
           <p class="eyebrow">Technical toolkit</p>
-          <h2>Built across data, ML, NLP, and platforms.</h2>
-          <p>
-            A practical stack for turning research ideas into working systems, dashboards, experiments,
-            and governance-ready tools.
-          </p>
+          <h2>I work from pipeline to model to interface.</h2>
         </div>
 
         <div class="skills-grid">
@@ -296,19 +307,12 @@
             <p>Git, GitHub Enterprise, Microsoft Copilot Studio, Power Apps, Postman, VS Code, Anaconda, Agile/Scrum.</p>
           </article>
         </div>
-
-        <div class="credential-strip" aria-label="Credentials">
-          <span>PRINCE2 Agile Foundation</span>
-          <span>ITIL4 Foundation</span>
-          <span>PRI Advanced Responsible Investment Analysis</span>
-          <span>UNSSC Leadership Skills in Emerging Talents 2025</span>
-        </div>
       </section>
 
       <section id="contact" class="section contact-section">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Open to thoughtful AI, data, and NLP work.</h2>
+          <h2>I am open to thoughtful AI, data, and NLP work.</h2>
           <p>
             The best conversations start with a concrete problem: a model that needs evaluation,
             a data workflow that needs structure, or an idea that needs a careful builder.
@@ -323,7 +327,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Silviya Silwal. Built for clarity, curiosity, and a little motion.</p>
+      <p>© <span id="year"></span> Silviya Silwal. I built this portfolio around the work I want to keep doing.</p>
     </footer>
 
     <script src="app.js"></script>
