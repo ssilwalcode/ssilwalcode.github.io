@@ -1,10 +1,17 @@
 # Portfolio
 
-A static GitHub Pages portfolio for Data Engineering, AI/NLP, and trustworthy AI systems work.
+A responsive, multi-page GitHub Pages portfolio for data engineering, AI/NLP, research, and writing.
+
+## Pages
+
+- `index.html` — overview, selected work, experience, and contact
+- `about.html` — background, interests, experience, and education
+- `publications.html` — peer-reviewed research
+- `writing.html` — ViaViz writing and Substack link
 
 ## Customize
 
-- Edit `index.html` to change your name, bio, project descriptions, and links.
+- Edit the HTML pages to change your bio, projects, research, and links.
 - Edit `styles.css` to adjust colors, spacing, and typography.
 - Update links and project descriptions as your public work evolves.
 
@@ -13,7 +20,7 @@ A static GitHub Pages portfolio for Data Engineering, AI/NLP, and trustworthy AI
 Open `index.html` in a browser, or run a tiny local server:
 
 ```bash
-cd portfolio
+cd ssilwalcode.github.io
 python3 -m http.server 5173
 ```
 
