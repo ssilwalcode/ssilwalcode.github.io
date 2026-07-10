@@ -95,7 +95,6 @@ button {
 .brand,
 .nav-links,
 .hero-actions,
-.project-topline,
 .contact-links {
   display: flex;
   align-items: center;
@@ -286,54 +285,52 @@ h3 {
   border-color: color-mix(in srgb, var(--green) 30%, var(--border));
 }
 
-.hero-console {
+.profile-card {
   display: grid;
-  gap: 14px;
-  padding: 14px;
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  gap: 18px;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--green) 13%, transparent), transparent 42%),
+    var(--paper);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  transform: rotate(1deg);
 }
 
-.console-topbar {
-  display: flex;
-  justify-content: space-between;
-  color: var(--muted);
+.profile-card-header {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-card-header span {
+  color: var(--green-deep);
   font-size: 0.78rem;
   font-weight: 850;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.console-line {
-  display: grid;
-  gap: 5px;
-  padding: 18px;
-  background: var(--solid);
-  border-radius: var(--radius);
+.profile-card-header strong {
+  color: var(--ink);
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  line-height: 1.05;
 }
 
-.console-line small {
-  color: color-mix(in srgb, var(--on-solid) 74%, transparent);
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.profile-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
-.console-line strong {
-  color: var(--on-solid);
-  font-size: 1.3rem;
-}
-
-.console-grid {
+.profile-stat-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
 }
 
-.console-grid div {
+.profile-stat-grid div {
   display: grid;
   gap: 7px;
   min-height: 104px;
@@ -343,25 +340,26 @@ h3 {
   border-radius: var(--radius);
 }
 
-.console-grid strong {
-  color: var(--coral);
+.profile-stat-grid strong {
+  color: var(--green-deep);
   font-size: clamp(1.05rem, 1.8vw, 1.45rem);
   line-height: 1;
 }
 
-.console-grid span {
+.profile-stat-grid span {
   color: var(--muted);
   font-size: 0.84rem;
   font-weight: 750;
 }
 
-.hero-image {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+.profile-note {
+  padding: 12px 14px;
+  color: var(--text);
+  background: color-mix(in srgb, var(--panel) 68%, var(--paper));
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  filter: saturate(1.02) contrast(1.03);
+  font-size: 0.92rem;
+  font-weight: 800;
 }
 
 .section {
@@ -444,15 +442,6 @@ h3 {
   line-height: 1;
 }
 
-.project-topline {
-  position: relative;
-  z-index: 1;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.project-topline a,
 .research-card a {
   color: var(--green-deep);
   font-size: 0.9rem;
@@ -460,7 +449,6 @@ h3 {
   text-decoration: none;
 }
 
-.project-topline a:hover,
 .research-card a:hover {
   text-decoration: underline;
 }
@@ -494,10 +482,26 @@ h3 {
   z-index: 1;
 }
 
+.project-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 4px 0 18px;
+}
+
+.project-actions a {
+  color: var(--green-deep);
+  font-size: 0.92rem;
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .details-toggle {
   align-self: flex-start;
   min-height: 40px;
-  margin-top: auto;
   padding: 9px 13px;
   color: var(--text);
   background: var(--paper);
@@ -702,9 +706,8 @@ h3 {
     min-height: auto;
   }
 
-  .hero-console {
+  .profile-card {
     max-width: 680px;
-    transform: none;
   }
 
   .sticky-heading {
@@ -749,7 +752,7 @@ h3 {
     font-size: clamp(3rem, 17vw, 5rem);
   }
 
-  .console-grid {
+  .profile-stat-grid {
     grid-template-columns: 1fr;
   }
 

@@ -48,15 +48,16 @@
           </div>
         </div>
 
-        <aside class="hero-console" aria-label="Portfolio summary">
-          <div class="console-topbar">
-            <span>Profile</span>
-          </div>
-          <div class="console-line">
-            <small>Current focus</small>
+        <aside class="profile-card" aria-label="Portfolio summary">
+          <div class="profile-card-header">
+            <span>Current focus</span>
             <strong>AI-ready data systems</strong>
           </div>
-          <div class="console-grid">
+          <p>
+            I like building tools that connect data, language, and decision-making without hiding
+            how the system works.
+          </p>
+          <div class="profile-stat-grid">
             <div>
               <strong>UNJSPF</strong>
               <span>Associate Data Engineer</span>
@@ -70,11 +71,7 @@
               <span>App engagements led</span>
             </div>
           </div>
-          <img
-            class="hero-image"
-            src="assets/portfolio-hero.png"
-            alt="Desk with research notes, a laptop dashboard, and visual AI governance materials"
-          >
+          <div class="profile-note">Grounded AI / data pipelines / multilingual NLP</div>
         </aside>
       </section>
 
@@ -116,15 +113,15 @@
 
           <article class="case-card case-card-large" data-category="ai safety product">
             <div class="case-index">02</div>
-            <div class="project-topline">
-              <p class="project-kicker">LLM safety lab</p>
-              <a href="https://github.com/ssilwalcode/PromptShield-Lab" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
+            <p class="project-kicker">LLM safety lab</p>
             <h3>PromptShield Lab</h3>
             <p>
               I built PromptShield Lab to test prompt injection, data leakage, unsafe tool use,
               and grounding failures across simulator, local, and API-based LLM providers.
             </p>
+            <div class="project-actions">
+              <a href="https://github.com/ssilwalcode/PromptShield-Lab" target="_blank" rel="noreferrer">View repository</a>
+            </div>
             <button class="details-toggle" type="button" aria-expanded="false">What I designed</button>
             <div class="project-details" hidden>
               <ul>
@@ -142,15 +139,15 @@
           </article>
 
           <article class="case-card compact" data-category="nlp research">
-            <div class="project-topline">
-              <p class="project-kicker">NLP foundations</p>
-              <a href="https://github.com/ssilwalcode/TermTagger_IOB" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
+            <p class="project-kicker">NLP foundations</p>
             <h3>TermTagger IOB</h3>
             <p>
               IOB tagging work that connects directly to sequence labeling, term extraction,
               entity recognition, and multilingual NLP fundamentals.
             </p>
+            <div class="project-actions">
+              <a href="https://github.com/ssilwalcode/TermTagger_IOB" target="_blank" rel="noreferrer">View repository</a>
+            </div>
             <ul class="tag-list" aria-label="TermTagger skills">
               <li>Python</li>
               <li>NLP</li>
