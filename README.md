@@ -1,4 +1,4 @@
-# Silviya Silwal Portfolio
+# Portfolio
 
 A static GitHub Pages portfolio for Data Engineering, AI/NLP, and trustworthy AI systems work.
 
