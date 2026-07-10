@@ -142,6 +142,7 @@ em { font-family: "Newsreader", Georgia, serif; font-weight: 400; }
 .project-kicker { margin-bottom: 12px; color: var(--terracotta); }
 .project-body h3 { font-size: clamp(2.8rem, 6vw, 6.4rem); }
 .project-summary > p { margin-bottom: 24px; color: var(--muted); font-size: clamp(1rem, 1.3vw, 1.16rem); line-height: 1.75; }
+.project-repo-link { margin-bottom: 24px; }
 .details-toggle { display: flex; width: 100%; justify-content: space-between; padding: 14px 0; color: var(--ink); background: transparent; border: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); cursor: pointer; font-size: .83rem; font-weight: 700; }
 .details-toggle span:last-child { color: var(--terracotta); transition: transform 200ms ease; }
 .details-toggle[aria-expanded="true"] span:last-child { transform: rotate(45deg); }
